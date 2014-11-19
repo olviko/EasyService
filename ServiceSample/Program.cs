@@ -47,15 +47,29 @@ namespace ServiceSample
     {
         static void Main(string[] args)
         {
+            // Initialize your service
             var service = new MiniService();
 
+            // Configure service hosting
             var settings = new ServiceHostingSettings
             {
                 ServiceName = "MiniService",
                 DisplayName = "Minimal Service",
                 Description = "Minimal service description",
+                StartMode = ServiceStartMode.Automatic,
+                ServiceAccount = ServiceAccount.LocalSystem,
+                RecoveryOptions = new ServiceRecoveryOptions
+                {
+                    FirstFailureAction = ServiceRecoveryAction.RestartService,
+                    SecondFailureAction = ServiceRecoveryAction.RestartService,
+                    SubsequentFailureAction = ServiceRecoveryAction.RestartComputer,
+                    ResetFailureCountWaitDays = 1,
+                    RestartServiceWaitMinutes = 3,
+                    RestartSystemWaitMinutes = 3
+                }
             };
 
+            // Parse command-line options and execute
             ServiceHost.Run(service, settings, args);
         }
     }
