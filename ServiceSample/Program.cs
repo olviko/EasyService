@@ -10,7 +10,7 @@ namespace ServiceSample
         {
             try
             {
-                // do useful work here {
+                // do some useful work here {
 
                 while (true)
                 {
