@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace EasyService
+﻿namespace EasyService
 {
     /// <summary>
     /// Indicates the service that must be running for this service to run.

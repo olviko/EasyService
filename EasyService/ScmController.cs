@@ -1,15 +1,14 @@
 using System;
+using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration.Install;
 using System.Diagnostics;
 using System.Linq;
+using System.Reflection;
 using System.Runtime.InteropServices;
 using System.Security.Permissions;
-using System.ServiceProcess;
-using System.Threading;
-using System.Collections.Generic;
-using System.Configuration.Install;
-using System.Reflection;
 using System.Security.Principal;
+using System.ServiceProcess;
 
 namespace EasyService
 {
