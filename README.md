@@ -3,17 +3,33 @@ EasyService
 
 EasyService is a .NET library intended to simplify development and maintenance of Windows services.
 
+With EasyService, creating a Windows service is as easy as creating a console application. With a few lines of code, you get a complete Windows service that can be debugged using the debugger and installed by running ```service.exe install```.
+
 Benefits
 --
 
-- Transform any console application into a self-installing Windows service.
-- Streamline debugging. It is much easier to debug a console application than a service. No more "Attach to process...".
+- Focus on your service logic instead of learning details of .NET Service API and InstallUtil commands.
+- Transform any console application into a self-installing Windows service. No need for InstallUtil and PowerShell scripts.
+- Painless debugging. It is much easier to debug a console application than a service. 
 - Full Windows Service Control Manager (SCM) integration including support for configuring all startup and recovery options.
 
-Example
+Quick Start
 --
 
+1. Create a new console application project.
+2. Reference EasyService.dll.
+3. Copy example code shown below to your project's *Program.cs*.
+4. Change *// pretend to work hard* line to do something useful.
+5. Build the project. 
+6. Install by executing service.exe install
+7. Start by executing service.exe start
+8. Enjoy :-)
+
 ```c#
+
+using System;
+using System.Threading;
+using EasyService;
 
 class MiniService : ServiceBase
 {
@@ -27,7 +43,7 @@ class MiniService : ServiceBase
             {
                 try
                 {
-                    // pretend to work hard :-)
+                    // pretend to work hard
                     stopEvent.WaitHandle.WaitOne(5000);
 
                     // periodically check stop event
@@ -84,9 +100,6 @@ class MiniService : ServiceBase
 
 
 ```
-
-1. MiniService.exe -install
-2. MiniService.exe -start
 
 Command-line Reference
 --
