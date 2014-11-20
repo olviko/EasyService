@@ -17,7 +17,7 @@ Quick Start
 1. Create a new console application project.
 2. Reference ```EasyService.dll```.
 3. Copy example code shown below to your project's ```Program.cs```.
-4. Change ```// pretend to work hard``` line to do something useful.
+4. Change ```// pretend to work hard``` line to do something useful... or not.
 5. Build the project. 
 6. Install by executing ```service.exe install```
 7. Start by executing ```service.exe start```
