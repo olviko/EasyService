@@ -104,12 +104,13 @@ class MiniService : ServiceBase
 Command-line Reference
 --
 
-A Windows service created using the library provides command-line arguments which can be used to install, uninstall, start, and stop the service.
+A Windows service created using the library provides command-line arguments which can be used to install, uninstall, start, and stop the service. If no command is provided the service will be started as a console application.
 
 service.exe **[command]**
 
 Command|Description
 ---------------------------------|-----
+                                 |Runs the service as a console application
 **help**                         |Displays help
 **install** [account] [password] |Installs the service. You can also set log-on account and password.
 **uninstall**                    |Uninstalls the service
