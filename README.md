@@ -1,7 +1,7 @@
 EasyService
 ===========
 
-**EasyService** is a .NET library intended to simplify development and maintenance of Windows services. **EasyService** makes creating a Windows service as easy as creating a console application. With just a few lines of code you will get a complete Windows service that can be debugged using the debugger and installed by running ```service.exe install```.
+**EasyService** is a .NET library intended to simplify development and maintenance of Windows services. With just a few lines of code you will get a complete Windows service that can be debugged using the debugger and installed by running ```service.exe install```.
 
 Benefits
 --
