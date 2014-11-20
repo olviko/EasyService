@@ -102,7 +102,7 @@ class MiniService : ServiceBase
 Command-line Reference
 --
 
-A Windows service built **EasyService** provides command-line arguments which can be used to install, uninstall, start, and stop the service. If no command is provided the service will be started as a console application.
+A Windows service built with **EasyService** provides command-line arguments which can be used to install, uninstall, start, and stop the service. If no command is provided the service will be started as a console application.
 
 service.exe **[command]**
 
