@@ -6,10 +6,9 @@ EasyService is a .NET library intended to simplify development and maintenance o
 Benefits
 --
 
-- Streamline deployment by creating self-installing services.
-- Simplify debugging. No more "Attach to process..." nightmares.
+- Transform any console application into a self-installing Windows service.
+- Streamline debugging. It is much easier to debug a console application than a service. No more "Attach to process...".
 - Full Windows Service Control Manager (SCM) integration including support for configuring all startup and recovery options.
-
 
 Example
 --
