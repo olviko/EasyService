@@ -6,7 +6,7 @@ EasyService
 Benefits
 --
 
-- Focus on your service logic instead of learning details of .NET Service API and InstallUtil commands.
+- Focus on your service logic instead of learning details of .NET Service API and InstallUtil.
 - Transform any console application into a self-installing Windows service.
 - Painless debugging. It is much easier to debug a console application than a service. 
 - Access all startup and service recovery settings not supported by .NET framework.
