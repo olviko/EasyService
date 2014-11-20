@@ -19,9 +19,9 @@ Quick Start
 3. Copy example code shown below to your project's ```Program.cs```.
 4. Change ```// pretend to work hard``` line to do something useful... or not.
 5. Build the project. 
-6. Install by executing ```service.exe install```
-7. Start by executing ```service.exe start```
-8. Enjoy :-)
+6. Install and start your new service by executing ```service.exe install``` and ```service.exe start```.
+
+Done!
 
 ```c#
 
