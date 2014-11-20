@@ -9,7 +9,7 @@ Benefits
 - Focus on your service logic instead of learning details of .NET Service API and InstallUtil commands.
 - Transform any console application into a self-installing Windows service.
 - Painless debugging. It is much easier to debug a console application than a service. 
-- Full Windows Service Control Manager (SCM) integration including support for configuring all startup and recovery options.
+- Access all startup and service recovery not provided by .NET framework.
 
 Quick Start
 --
