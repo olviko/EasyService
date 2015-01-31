@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using System.Threading;
 
 namespace EasyService
 {
@@ -16,9 +17,16 @@ namespace EasyService
             {
                 if (Environment.UserInteractive)
                 {
+                    ManualResetEvent stopSignal = new ManualResetEvent(false);
                     service.OnStart();
-                    Console.WriteLine("Service is running. Press ENTER to stop...");
-                    Console.ReadLine();
+                    Console.WriteLine("Service is running. Press CTRL+C to stop...");
+                    Console.CancelKeyPress += (_, e) => 
+                    { 
+                        e.Cancel = true; 
+                        stopSignal.Set(); 
+                    };
+                    stopSignal.WaitOne();
+                    Console.WriteLine("Stopping...");
                     service.OnStop();
                 }
                 else
